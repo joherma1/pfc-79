@@ -1,0 +1,56 @@
+Utilidades de la interfaz del caso de uso "Gestión Catálogo":
+
+ · La ventana "Gestion Catalogo" muestra en una tabla los productos y ofertas existentes en la BD.
+ · Al hacer doble click sobre un producto de la tabla se abrirá una ventana que muestre toda la información del mismo.
+ · El botón "Alta" abre una ventana "Detalle Producto" para introducir los datos.
+ · El botón "Modificar" abre una ventana "Detalle Producto" con los datos del mismo para su edición.
+ · El botón "Baja" elimina el producto de la tabla que se halle seleccionado.
+ · El botón "Salir" cierra la ventana de "Gestion Catalogo".
+ · La ventana "Detalle Producto" contiene los campos: Código, Nombre, Tipo, Precio, Fecha Inicio, Fecha Fin y Descripción, y muestra una foto del producto.
+ · El botón "Examinar" de la ventana "Detalle Producto" permite buscar una imagen para asignarla al producto.
+ · El botón "Aceptar" de la ventana "Detalle Producto" guarda los cambios y cierra la ventana.
+ · El botón "Cancelar" de la ventana "Detalle Producto" 
+
+
+
+Pruebas de aceptación sobre la interfaz del caso de uso "Gestión Catálogo":
+
+Tabla Productos:
+	· Muestra todos los productos de la BD.
+	· Pinchando sobre un producto de la tabla el producto queda seleccionado.
+	· Haciendo doble click sobre un producto se abre una ventana que muestra toda la información del mismo. Esta información no es editable.
+Botón "Alta":
+	· Abre una ventana "Detalle Producto" con los campos vacíos. Los campos deben ser editables.
+Botón "Modificar":
+	· Se halla deshabilitado si no hay productos en la BD o no hay un producto seleccionado en la tabla.
+	· Abre una ventana "Detalle Producto" con los datos correspondientes al producto seleccionado en la tabla. Los campos deben ser editables.
+Botón "Baja":
+	· Se halla deshabilitado si no hay productos en la BD o no hay un producto seleccionado en la tabla.
+	· Elimina el producto seleccionado en la tabla de la base de datos.
+	· No se puede eliminar un producto del que haya pedidos pendientes. Aparece un mensaje de aviso.
+	· Se solicitará confirmación de la acción.
+Botón "Salir":
+	· Cierra la ventana de "Gestión Catálogo"
+
+
+Ventana "Detalle Producto":
+
+  · El campo Tipo será un desplegable con las opciones "Oferta" y "Variedad".
+  · Aparece una imagen por defecto si hay una imagen asignada al producto.
+
+  Botón "Examinar":
+	· Abre una ventana de búsqueda de archivos. Asigna el archivo seleccionado al producto.
+	· Tras seleccionar un archivo la imagen se redimensionará y será mostrada correctamente en la ventana.
+  Botón "Aceptar":
+	· No se puede dar de alta un producto con un código o un nombre igual a uno ya existente en la BD. Aparece un mensaje de aviso.
+	· No se puede dar de alta un producto si alguno de los campos no tiene valor asignado (exceptuando la foto). Aparece un mensaje de aviso.
+	· El valor del campo Fecha Final debe ser mayor que el del campo Fecha inicial.
+	· En el caso de que el producto sea una variedad de naranja/mandarina, los valores de los campos Fecha Inicial y Fecha Final serán meses.
+	· En el caso de que el producto sea una oferta, los valores de los campos Fecha Inicial y Fecha Final serán fechas concretas.
+	· Se solicitará confirmación de la acción. Guarda los cambios en la BD y cierra la ventana.
+  Botón "Cancelar":
+	· Cierra la ventana "Detalle Producto". Los cambios realizados se descartan.
+	
+
+
+
