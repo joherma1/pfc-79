@@ -52,5 +52,5 @@ Ventana "Detalle Producto":
 	· Cierra la ventana "Detalle Producto". Los cambios realizados se descartan.
 	
 
-
+Fin PA
 
