@@ -1,3 +1,4 @@
+usuario Lavita31 va a modificar
 Utilidades de la interfaz del caso de uso "Gestión Catálogo":
 
  · La ventana "Gestion Catalogo" muestra en una tabla los productos y ofertas existentes en la BD.
@@ -9,9 +10,7 @@ Utilidades de la interfaz del caso de uso "Gestión Catálogo":
  · La ventana "Detalle Producto" contiene los campos: Código, Nombre, Tipo, Precio, Fecha Inicio, Fecha Fin y Descripción, y muestra una foto del producto.
  · El botón "Examinar" de la ventana "Detalle Producto" permite buscar una imagen para asignarla al producto.
  · El botón "Aceptar" de la ventana "Detalle Producto" guarda los cambios y cierra la ventana.
- · El botón "Cancelar" de la ventana "Detalle Producto" 
-
-
+ 
 
 Pruebas de aceptación sobre la interfaz del caso de uso "Gestión Catálogo":
 
