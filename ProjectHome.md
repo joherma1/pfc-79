@@ -1,0 +1,1 @@
+Servidor que contiene documentacion y codigo de diferentes casos de uso. A este servidor se conectara una aplicacion desarrollada en java para trabajar con el a nivel de documentacion y de codigo
